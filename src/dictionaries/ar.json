@@ -1,0 +1,304 @@
+{
+  "logo": "LGD",
+  "home": {
+    "sliderComponent": {
+      "title": "التقوا بنا في المعارض التجارية",
+      "description": "على ما يلي",
+      "description2": "تمور لميسي الذهبية",
+      "Meetus": "تعرف علينا"
+    },
+    "bestProducts": {
+      "Discover": "إكتشف",
+      "OurProducts": "منتجاتنا"
+    },
+    "about": {
+      "ourStory": "قصتنا",
+      "aboutUs": "معلومات عنا",
+      "descriptions": {
+        "one": "مرحبًا بكم في بيتزانا، حيث نقدم أفضل أنواع البيتزا المصنوعة من الطازج المكونات. كل قطعة هي تحفة فنية، تم إعدادها بعناية لتقديم التوازن المثالي للن flavors. من المفضلات الكلاسيكية إلى الإبداعات الفريدة، هناك شيء لكل عشاق البيتزا!",
+        "two": "شغفنا بالبيتزا يتجلى في كل طبق. نختار أفضل المكونات المحلية و نخبزها إلى الكمال، مما يضمن أن كل قضمة لذيذة ومرضية. سواء كنت هنا لتناول وجبة سريعة أو تجربة تناول طعام مريحة، نحن هنا لخدمتك.",
+        "three": "انضم إلينا في رحلة مليئة بالنكهات واستمتع بتجربة البيتزا كما لم يحدث من قبل. نحن نفخر بتقديم طعم رائع، وجودة، وخدمة لجعل كل وجبة لا تُنسى. تعال وذوق الفرق!"
+      }
+    },
+    "contact": {
+      "DontHesitate": "لا تتردد",
+      "contactUs": "اتصل بنا"
+    }
+  },
+  "products": {
+    "productInfo": "معلومات المنتج",
+    "ChooseQuantity": "اختر الكمية",
+    "addToCart": "أضف إلى السلة",
+    "noProductsFound": "لم يتم العثور على منتجات"
+  },
+  "navbar": {
+    "home": "الصفحة الرئيسية",
+    "about": "معلومات عنا",
+    "ourProducts": "منتجاتنا",
+    "menu": "القائمة",
+    "contact": "تواصل معنا",
+    "myAccount": "حسابي",
+    "login": "تسجيل الدخول",
+    "register": "انشاء حساب",
+    "signOut": "تسجيل الخروج",
+    "profile": "الملف الشخصي",
+    "admin": "المسؤول",
+    "search": "البحث..."
+  },
+  "auth": {
+    "login": {
+      "title": "مرحبًا بعودتك",
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
+      },
+      "submit": "تسجيل الدخول",
+      "authPrompt": {
+        "message": "ليس لديك حساب؟ ",
+        "signUpLinkText": "سجل الآن"
+      }
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "placeholder": "أدخل كلمة المرور"
+      },
+      "confirmPassword": {
+        "label": "تأكيد كلمة المرور",
+        "placeholder": "أعد إدخال كلمة المرور"
+      },
+      "submit": "إنشاء حساب",
+      "authPrompt": {
+        "message": "هل لديك حساب؟ ",
+        "loginLinkText": "تسجيل الدخول"
+      }
+    }
+  },
+  "validation": {
+    "nameRequired": "الاسم مطلوب",
+    "validEmail": "يجب أن يكون بريد إلكتروني صالح",
+    "passwordMinLength": "يجب أن تكون كلمة المرور على الأقل 6 أحرف",
+    "passwordMaxLength": "يجب أن تكون كلمة المرور على الأكثر 40 حرفًا",
+    "confirmPasswordRequired": "تأكيد كلمة المرور مطلوب",
+    "passwordMismatch": "كلمة المرور غير متطابقة"
+  },
+  "messages": {
+    "userNotFound": "المستخدم غير موجود",
+    "incorrectPassword": "كلمة المرور غير صحيحة",
+    "loginSuccessful": "تم تسجيل الدخول بنجاح",
+    "unexpectedError": "حدث خطأ غير متوقع",
+    "userAlreadyExists": "المستخدم موجود بالفعل",
+    "accountCreated": "تم إنشاء الحساب بنجاح",
+    "updateProfileSucess": "تم تحديث الملف الشخصي بنجاح",
+    "categoryAdded": "تم اضافة الفئة بنجاح",
+    "updatecategorySucess": "تم تحديث الفئة بنجاح",
+    "deleteCategorySucess": "تم حذف الفئة بنجاح",
+    "productAdded": "تم اضافة المنتج بنجاح",
+    "updateProductSucess": "تم تحديث المنتج بنجاح",
+    "deleteProductSucess": "تم حذف المنتج بنجاح",
+    "updateUserSucess": "تم تحديث المستخدم بنجاح",
+    "deleteUserSucess": "تم حذف المستخدم بنجاح"
+  },
+  "menuItem": {
+    "addToCart": "أضف الي العربة"
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "form": {
+      "name": {
+        "label": "الاسم",
+        "placeholder": "أدخل اسمك"
+      },
+      "email": {
+        "label": "البريد الإلكتروني",
+        "placeholder": "أدخل بريدك الإلكتروني"
+      },
+      "phone": {
+        "label": "الهاتف",
+        "placeholder": "أدخل رقم هاتفك",
+        "validation": {
+          "required": "رقم الهاتف مطلوب",
+          "invalid": "يرجى إدخال رقم هاتف صالح"
+        }
+      },
+      "address": {
+        "label": "العنوان",
+        "placeholder": "أدخل عنوانك",
+        "validation": {
+          "required": "العنوان مطلوب"
+        }
+      },
+      "postalCode": {
+        "label": "الرمز البريدي",
+        "placeholder": "أدخل الرمز البريدي",
+        "validation": {
+          "required": "الرمز البريدي مطلوب",
+          "invalid": "يرجى إدخال رمز بريدي صالح"
+        }
+      },
+      "city": {
+        "label": "المدينة",
+        "placeholder": "أدخل مدينتك",
+        "validation": {
+          "required": "المدينة مطلوبة"
+        }
+      },
+      "country": {
+        "label": "الدولة",
+        "placeholder": "أدخل دولتك",
+        "validation": {
+          "required": "الدولة مطلوبة"
+        }
+      }
+    }
+  },
+  "admin": {
+    "tabs": {
+      "profile": "الملف الشخصي",
+      "categories": "الفئات",
+      "menuItems": "عناصر القائمة",
+      "users": "المستخدمون",
+      "orders": "الطلبات",
+      "images": "الصور"
+    },
+    "categories": {
+      "createNewCategory": "إنشاء فئة جديد",
+      "form": {
+        "name": {
+          "label": "اسم الفئة بالانجليزية",
+          "placeholder": "أدخل اسم الفئة",
+          "validation": {
+            "required": "اسم الفئة مطلوب"
+          }
+        },
+        "nameArabic": {
+          "label": "اسم الفئة بالعربية",
+          "placeholder": "أدخل اسم الفئة بالعربية",
+          "validation": {
+            "required": "اسم الفئة بالعربية مطلوب"
+          }
+        },
+        "description": {
+          "label": "الوصف بالانجليزية",
+          "placeholder": "أدخل الوصف",
+          "validation": {
+            "required": "الوصف مطلوب"
+          }
+        },
+        "descriptionArabic": {
+          "label": "الوصف بالعربية",
+          "placeholder": "أدخل الوصف بالعربية",
+          "validation": {
+            "required": "الوصف بالعربية مطلوب"
+          }
+        },
+        "image": {
+          "validation": {
+            "required": "صورة الفئة مطلوبة"
+          }
+        }
+      }
+    },
+    "menu-items": {
+      "createNewMenuItem": "إنشاء عنصر قائمة جديد",
+      "addItemSize": "إضافة حجم العنصر",
+      "addExtraItem": "إضافة عنصر إضافي",
+      "menuOption": {
+        "name": "الاسم",
+        "extraPrice": "السعر الاضافي"
+      },
+      "form": {
+        "name": {
+          "label": "اسم العنصر بالانجليزية",
+          "placeholder": "أدخل اسم العنصر",
+          "validation": {
+            "required": "اسم العنصر مطلوب"
+          }
+        },
+        "nameArabic": {
+          "label": "اسم العنصر بالعربية",
+          "placeholder": "أدخل اسم العنصر بالعربية",
+          "validation": {
+            "required": "اسم العنصر بالعربية مطلوب"
+          }
+        },
+        "description": {
+          "label": "الوصف بالانجليزية",
+          "placeholder": "أدخل الوصف",
+          "validation": {
+            "required": "الوصف مطلوب"
+          }
+        },
+        "descriptionArabic": {
+          "label": "الوصف بالعربية",
+          "placeholder": "أدخل الوصف بالعربية",
+          "validation": {
+            "required": "الوصف بالعربية مطلوب"
+          }
+        },
+        "price": {
+          "label": "السعر الأساسي",
+          "placeholder": "أدخل السعر الأساسي",
+          "validation": {
+            "required": "السعر الأساسي مطلوب"
+          }
+        },
+        "category": {
+          "validation": {
+            "required": "اختيار الفئة مطلوب"
+          }
+        },
+        "image": {
+          "validation": {
+            "required": "صورة المنتج مطلوبة"
+          }
+        }
+      }
+    }
+  },
+  "category": "الفئة",
+  "save": "حفظ",
+  "edit": "تعديل",
+  "delete": "حذف",
+  "create": "انشاء",
+  "sizes": "الأحجام",
+  "extrasIngredients": "عناصر اضافية",
+  "cancel": "الغاء",
+  "cart": {
+    "title": "عربة التسوق",
+    "noItemsInCart": "لا توجد عناصر في سلة التسوق الخاصة بك. أضف بعضًا"
+  },
+  "footer": {
+    "title": "فخامة خالصة في كل قضمة",
+    "description": "دلل نفسك بأجود أنواع التمور مع تمور لميسي الذهبية، متعة حقيقية تُبهج الحواس. تُختار هذه التمور بعناية فائقة لجودتها الاستثنائية، وتتميز بنكهتها الغنية وقوامها الذهبي الناعم. مثالية كوجبة خفيفة أو حلوى أو هدية، تُضفي تمور لميسي الذهبية لمسة من الحلاوة على أي مناسبة. استمتع بالخير الطبيعي والطاقة المنعشة مع كل قضمة، وارتقي بتجربة الطهي الخاصة بك مع هذه اللذة الفاخرة.",
+    "about": "معلومات عنا",
+    "contact": "تواصل معنا",
+    "followUs": "تابعنا",
+    "subscribe": {
+      "title": "اشترك في النشرة الإخبارية",
+      "emailSubscribe": "أدخل بريدك الإلكتروني",
+      "successMessage": "تم الاشتراك بنجاح في النشرة الإخبارية",
+      "errorMessage": "الرجاء إدخال بريد إلكتروني صالح..."
+    }
+  },
+  "copyRight": "© 2025 جميع الحقوق محفوظة",
+  "noProductsFound": "لم يتم العثور على منتجات",
+  "noCategoriesFound": "لم يتم العثور على الفئات"
+}
