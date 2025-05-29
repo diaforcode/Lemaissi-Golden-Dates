@@ -17,29 +17,29 @@ export const getProductsByCategory = cache(
   ["products-by-category"],
   { revalidate: 3600 }
 );
-export const getBestSellers = cache(
-  (limit?: number | undefined) => {
-    const bestSellers = db.product.findMany({
-      where: {
-        orders: {
-          some: {},
-        },
-      },
-      orderBy: {
-        orders: {
-          _count: "desc",
-        },
-      },
-      include: {
-        images: true,
-      },
-      take: limit,
-    });
-    return bestSellers;
-  },
-  ["best-sellers"],
-  { revalidate: 3600 }
-);
+// export const getBestSellers = cache(
+//   (limit?: number | undefined) => {
+//     const bestSellers = db.product.findMany({
+//       where: {
+//         orders: {
+//           some: {},
+//         },
+//       },
+//       orderBy: {
+//         orders: {
+//           _count: "desc",
+//         },
+//       },
+//       include: {
+//         images: true,
+//       },
+//       take: limit,
+//     });
+//     return bestSellers;
+//   },
+//   ["best-sellers"],
+//   { revalidate: 3600 }
+// );
 
 export const getProduct = cache(
   (id: string) => {
@@ -49,6 +49,7 @@ export const getProduct = cache(
       },
       include: {
         images: true,
+        packagingDetails: true,
       },
     });
     return product;
@@ -62,6 +63,7 @@ export const getProducts = cache(
     const products = db.product.findMany({
       include: {
         images: true,
+        packagingDetails: true,
       },
     });
     return products;

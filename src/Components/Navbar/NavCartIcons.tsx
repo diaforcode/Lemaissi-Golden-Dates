@@ -5,7 +5,6 @@ import { formatCurrency } from "@/Lib/formatters";
 import { selectCartItems } from "@/redux/features/cart/cartSlice";
 import { useAppSelector } from "@/redux/hooks";
 import { ShoppingBag } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 const NavCartIcons = () => {

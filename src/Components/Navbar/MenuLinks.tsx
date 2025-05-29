@@ -1,42 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import NavImages from "./NavImages";
 import SearchBar from "./SearchBar";
-import Image from "next/image";
 import { Translations } from "@/types/translations";
 import { Routes } from "@/constants/enums";
 import { useParams } from "next/navigation";
-// import { Bags, Collection, NewIn } from "@/Lib/data";
 
 const MenuLinks = ({ translations }: { translations: Translations }) => {
-  // const [showCollections, setShowCollections] = useState(false);
-  // const [showNewIn, setShowNewIn] = useState(false);
-  // const [showBags, setShowBags] = useState(false);
-
-  // const Arrow_down_menu = () => {
-  //   return (
-  //     <Image
-  //       src="/arrow_down_menu.png"
-  //       alt=""
-  //       width={24}
-  //       height={24}
-  //       className="cursor-pointer p-1 "
-  //     />
-  //   );
-  // };
-  // const Arrow_up_menu = () => {
-  //   return (
-  //     <Image
-  //       src="/arrow_up_menu.png"
-  //       alt=""
-  //       width={24}
-  //       height={24}
-  //       className="cursor-pointer p-1 "
-  //     />
-  //   );
-  // };
   const { locale } = useParams();
 
   return (

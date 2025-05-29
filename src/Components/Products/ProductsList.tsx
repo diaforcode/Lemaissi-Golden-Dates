@@ -36,7 +36,7 @@ const ProductList = async ({
               key={product.id}
             >
               <Link
-                href={"/product/" + product.id}
+                href={`/${locale}/product/` + product.id}
                 className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl"
               >
                 <Image

@@ -4,14 +4,14 @@ import Menu from "./Menu";
 
 import MenuLinks from "./MenuLinks";
 import SearchBar from "./SearchBar";
-import Image from "next/image";
-import NavCartIcons from "./NavCartIcons";
+
 import { getServerSession } from "next-auth";
 import getTrans from "@/Lib/translation";
 import { getCurrentLocale } from "@/Lib/getCurrentLocale";
 import { authOptions } from "@/server/auth";
 import NavUser from "./NavUser";
 import SwitchLanguage from "../SwitchLanguage";
+import NavCartWrapper from "./NavCartWrapper";
 
 const Navbar = async () => {
   const locale = await getCurrentLocale();
@@ -34,16 +34,6 @@ const Navbar = async () => {
             Dates
           </p>
         </div>
-        {/* <div className="flex flex-col items-center  font-sans">
-            <p className="text-sm font-semibold leading-[1] m-0 p-0">
-              Lemaissi
-            </p>
-            <div className="text-lg font-bold leading-[1] m-0 p-0 text-primary">
-              <p>Golden</p>
-              <div className="border-t border-yellow-600  " />
-            </div>
-            <p className="text-sm font-semibold leading-[1] m-0 p-0">Dates</p>
-          </div> */}
       </Link>
     );
   };
@@ -52,7 +42,7 @@ const Navbar = async () => {
       {/* MOBILE */}
       <div className="h-full flex items-center justify-between md:hidden">
         <Logo />
-        <Menu />
+        <Menu translations={translations} initialSession={initialSession} />
       </div>
       {/* BIGGER SCREENS */}
       <div className="hidden md:flex items-center justify-between gap-8 h-full">
@@ -67,12 +57,12 @@ const Navbar = async () => {
         {/* RIGHT */}
         <div className="w-2/3 xl:w-[50%] flex items-center justify-between gap-8">
           <SearchBar typeBar="search" translations={translations} />
-          <NavCartIcons />
+          <NavCartWrapper />
           <NavUser
             translations={translations}
             initialSession={initialSession}
           />
-          <SwitchLanguage />
+          <SwitchLanguage responsive="Desktop" />
         </div>
       </div>
     </div>

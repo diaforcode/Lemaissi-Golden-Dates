@@ -73,32 +73,32 @@ model Account {
 }
 
 model Product {
-  id                String            @id @default(cuid())
+  id                String         @id @default(cuid())
   name              String
   nameArabic        String
   description       String
   descriptionArabic String
   order             Int
   price             Float
-  createdAt         DateTime          @default(now())
-  updatedAt         DateTime          @updatedAt
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
   images            Image[]
   orders            OrderProduct[]
-  category          Category          @relation(fields: [categoryId], references: [id])
+  category          Category       @relation(fields: [categoryId], references: [id])
   categoryId        String
-  packagingDetails  PackagingDetail[]
+  // packagingDetails  PackagingDetail[]
 }
 
-model PackagingDetail {
-  id                        String  @id @default(cuid())
-  product                   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
-  productId                 String
-  packageSize               String // e.g., "500g", "1kg", "2kg"  
-  boxesPerCarton            Int
-  cartonsPerPallet          Int
-  netWeightPer40ftContainer Float
-  netWeightPer20ftContainer Float
-}
+// model PackagingDetail {
+//   id                        String  @id @default(cuid())
+//   product                   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+//   productId                 String
+//   packageSize               String  @default("500g") // e.g., "500g", "1kg", "2kg"  
+//   boxesPerCarton            Int     @default(12)
+//   cartonsPerPallet          Int     @default(56)
+//   netWeightPer40ftContainer Float   @default(6720)
+//   netWeightPer20ftContainer Float   @default(3024)
+// }
 
 model Image {
   id        String  @id @default(cuid())

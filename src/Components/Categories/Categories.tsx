@@ -1,21 +1,14 @@
+import { getCurrentLocale } from "@/Lib/getCurrentLocale";
 import { db } from "@/Lib/prisma";
 import { getCategories } from "@/server/db/categories";
 import { Category } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
 
-const Categories = async ({
-  limit,
-  searchParams,
-  Products,
-}: {
-  limit?: number;
-  searchParams?: any;
-  Products?: any;
-}) => {
+const Categories = async () => {
   const categories = await getCategories();
   // console.log(categories);
-
+  const locale = await getCurrentLocale();
   return (
     <div className="px-4 my-4 md:mt-8 py-4">
       <div className="flex flex-col gap-4 md:gap-8 md:flex-row ">
@@ -25,7 +18,7 @@ const Categories = async ({
             className="relative bg-white shadow-xl flex flex-col  "
           >
             <Link
-              href={"/Category/" + category.id}
+              href={`/${locale}/Category/` + category.id}
               className="relative flex h-72 sm:h-auto  overflow-hidden "
             >
               <Image
